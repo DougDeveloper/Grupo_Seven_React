@@ -1,0 +1,24 @@
+.header {
+    background-color: #282c34;
+    border-bottom: 1px solid #282;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px;
+    color: #fff;
+}
+.alerta {
+    width: 30px;
+    height: 30px;
+    padding: auto;
+    margin: 10px;
+}
+.alerta-sim {
+    background-color: #f00;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: auto;
+    margin: 10px;
+}

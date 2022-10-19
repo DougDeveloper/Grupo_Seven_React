@@ -1,10 +1,15 @@
 .App {
   text-align: center;
+  box-sizing: border-box;
 }
 
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+.home-page {
+  display: flex;
+  flex-direction: row;
 }
 
 @media (prefers-reduced-motion: no-preference) {

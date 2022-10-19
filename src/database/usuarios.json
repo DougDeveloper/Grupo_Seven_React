@@ -1,0 +1,65 @@
+[
+ {
+  "username2": "Alex Lima",
+  "email2": "alxnvn@yahoo.com.br",
+  "cpf2": "36036058888",
+  "telefone2": "966471637",
+  "password2": "$2a$10$HFceAa9uDm8gJf92Xa1e6udw1e1l4qtDEVzus2.9u.lINI9EqM4VO",
+  "passwordConfirmation2": "7777777",
+  "id": 1
+ },
+ {
+  "username2": "Rafael Nadal",
+  "email2": "alxnvn@gmail.com",
+  "cpf2": "36036058889",
+  "telefone2": "966471637",
+  "password2": "$2a$10$dYNWXDgjBt/HuUJ/Yvp3Pek/pICYo19y3Tff/rn8n/3Zsb3HcoJXa",
+  "passwordConfirmation2": "5555555",
+  "id": 2
+ },
+ {
+  "username2": "Roger Federer",
+  "email2": "alxnvn@yahoo.com.bt",
+  "cpf2": "36036058887",
+  "telefone2": "966471637",
+  "password2": "$2a$10$vTsDANwIzwYCKa7lDZWf8eeLE/FerTK9odBCZ0n93lqrQ7ybVP/g2",
+  "passwordConfirmation2": "4444444",
+  "id": 3
+ },
+ {
+  "username2": "Douglas",
+  "email2": "douglas@gmail.com",
+  "cpf2": "00000000000",
+  "telefone2": "00000000000",
+  "password2": "$2a$10$8IGdP0HZLeWdd/.w2taKc.vmb8mJ4D9kb6xBThP7L43ABa4/IrxNq",
+  "passwordConfirmation2": "123456789",
+  "id": 4
+ },
+ {
+  "username2": "Douglas Ferreira",
+  "email2": "douglashiuga2@gmail.com",
+  "cpf2": "11111111112",
+  "telefone2": "00000000008",
+  "password2": "$2a$10$LeH9e4yZgvYrEirkXigca.e2d.D3BlOvv7gkCtZVQDm5d7yoISXZm",
+  "passwordConfirmation2": "123456789",
+  "id": 5
+ },
+ {
+  "username2": "DougBoy",
+  "email2": "dougemail@gmail.com",
+  "cpf2": "00000000011",
+  "telefone2": "11111111111",
+  "password2": "$2a$10$0Zx0UaFNTnBOePRUyx314u/xLE52R9VwAPAwctf54qtAxZMZgDGku",
+  "passwordConfirmation2": "123456789",
+  "id": 6
+ },
+ {
+  "username2": "teste",
+  "email2": "teste@teste.com",
+  "cpf2": "77777777733",
+  "telefone2": "8832233322",
+  "password2": "$2a$10$qXeDU6vMQ5GakWINmCqFdOt3q099A8nn68zyT5hN2sUe5128Udu2S",
+  "passwordConfirmation2": "123456",
+  "id": 7
+ }
+]
