@@ -1,12 +1,14 @@
 .home {
-    box-sizing: border-box;
-    background: rgb(149, 149, 149);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin-left: 6%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #592B92;
 }
+
 .produtos {
     box-sizing: border-box;
     background: #fff;
@@ -14,16 +16,69 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
+
 .produto {
     padding: 20px;
     border-radius: 5px;
+    margin-top: 5%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgb(235, 236, 230);
     width: 200px;
     height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    border: #592B92 3px solid;
+}
+
+.produto h2 p{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.productDescription{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.prodName, .prodName, .prodDesc{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.buy{
+    width: 100%;
+    display: inline-block;
+    margin-top: 6%;
+    padding: 5%;
+    background-color: #592B92;
+    border: 3px solid #592B92;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(235, 236, 230);
+    font-weight: bold;
+    align-items: center;
+}
+
+.buy:hover{
+    border: 3px solid #592B92;
+    background-color: rgb(235, 236, 230);
+    color: #592B92;
+}
+
+.comprar{
+    justify-content: center;
+    align-items: center;
+}
+
+.prodImg{
+    justify-content: center;
+    width: 90%;
+    padding: 7%;
 }

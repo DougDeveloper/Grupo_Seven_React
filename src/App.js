@@ -6,7 +6,7 @@ import Home from './components/home/Home';
 import Cart from './components/cart/Cart';
 import Login from './components/auth/login';
 import Cadastro from './components/auth/cadastro';
-
+import Vitrine from './components/vitrine/Vitrine';
 
 function App() {
   const [selecionar, setSelecionar] = useState([]);
@@ -23,10 +23,22 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
+      <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/cadastro" element={<Cadastro />}  />
-          <Route path="/home" element={
+          <Route path="/vitrine" element={
+          <>
+            <Header 
+              produto={selecionar}
+              setShowCart={setShowCart}
+            />
+            <div className='home-page'>
+              <Vitrine setProduto={setProduto} />
+              {showCart && <Cart setShowCart={setShowCart} produtosCart={selecionar} />}
+            </div> 
+          </>
+          } />
+          <Route path="/" element={
             <>
               <Header 
                 produto={selecionar}
@@ -41,7 +53,6 @@ function App() {
           <Route path="/cart" element={<Cart selecionar={selecionar} />} />
         </Routes>
       </BrowserRouter>
-
 
     </div>
   );

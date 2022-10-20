@@ -15,31 +15,31 @@ function Home({ setProduto }) {
         } ;
     }, [categoria]);
 
-
     return (
         <div className="home">
-        <h1>Home</h1>
         <div className="categorias">
             <button onClick={() => setCategoria("todos")}>Todos</button>
-            <button onClick={() => setCategoria("farmacia")}>farmacia</button>
             <button onClick={() => setCategoria("home")}>home</button>
+            <button onClick={() => setCategoria("farmacia")}>farmacia</button>
+            <button onClick={() => setCategoria("pet")}>pet</button>
             <button onClick={() => setCategoria("variedades")}>variedades</button>
         </div>
-        <p>{categoria}</p>
+        <p className="productDescription">{categoria}</p>
         <div className="produtos">
             {produtosHome?.map((produto) => (
                 <div className="produto" key={produto.id}>
-                    <h2>{produto.nome}</h2>
-                    <p>{produto.price}</p>
-                    <p>{produto.description}</p>
+                    <h2 className="prodName">{produto.nome}</h2>
+                    <img className="prodImg" src={produto.image} />
+                    <p className="prodPrice">{produto.price}</p>
+                    <p className="prodDesc">{produto.description}</p>
                     <div className="comprar">
-                        <button onClick={ () => setProduto(produto.id)}>Comprar</button>
+                        <button className="buy" onClick={ () => setProduto(produto.id)}>Comprar</button>
                     </div>
                 </div>
             ))} 
         </div>
         </div>
     );
-    }
+}
 
 export default Home;
