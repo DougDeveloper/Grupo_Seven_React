@@ -36,8 +36,10 @@ function Header({produto, setShowCart}) {
 
     return (
         <div className="header">
-            <h1>E-commerce Maggot</h1>
-            <div>
+            <a href="./">
+            <img src="/img/Grupo Seven 2.png" className="imgLogo"></img>
+            </a>
+            <div className="cart-login">
                 {logado?
                 <button onClick={() => singOut()} className={`button-login`} >
                     sair

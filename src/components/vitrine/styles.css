@@ -1,11 +1,11 @@
 .home {
     box-sizing: border-box;
-    background: rgb(149, 149, 149);
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 90%;
     height: 100%;
+    margin-left: 5%;
 }
 .produtos {
     box-sizing: border-box;
@@ -14,7 +14,7 @@
     height: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .produto {

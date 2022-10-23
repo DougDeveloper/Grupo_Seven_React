@@ -8,6 +8,7 @@ import Login from './components/auth/login';
 import Cadastro from './components/auth/cadastro';
 import Vitrine from './components/vitrine/Vitrine';
 
+
 function App() {
   const [selecionar, setSelecionar] = useState([]);
   const [showCart, setShowCart] = useState(false);

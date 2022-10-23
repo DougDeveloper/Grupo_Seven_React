@@ -19,16 +19,16 @@ function Home({ setProduto }) {
         <div className="home">
         <div className="categorias">
             <button onClick={() => setCategoria("todos")}>Todos</button>
-            <button onClick={() => setCategoria("home")}>home</button>
-            <button onClick={() => setCategoria("farmacia")}>farmacia</button>
-            <button onClick={() => setCategoria("pet")}>pet</button>
-            <button onClick={() => setCategoria("variedades")}>variedades</button>
+            <button onClick={() => setCategoria("home")}>Home</button>
+            <button onClick={() => setCategoria("farmacia")}>Farmácia</button>
+            <button onClick={() => setCategoria("pet")}>Pet</button>
+            <button onClick={() => setCategoria("variedades")}>Variedades</button>
         </div>
-        <p className="productDescription">{categoria}</p>
+        <p className="iconCategory"></p>
         <div className="produtos">
             {produtosHome?.map((produto) => (
                 <div className="produto" key={produto.id}>
-                    <h2 className="prodName">{produto.nome}</h2>
+                    {/* <h2 className="prodName">{produto.nome}</h2> */}
                     <img className="prodImg" src={produto.image} />
                     <p className="prodPrice">{produto.price}</p>
                     <p className="prodDesc">{produto.description}</p>

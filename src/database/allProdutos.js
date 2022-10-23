@@ -1,7 +1,7 @@
 const produtos = [
   {
   "id":1,
-  "description":"Dipirona 500mg ,240 comprimidos",
+  "description":"Dipirona 500mg",
   "price":17.99,
   "image":"./img/imagem_farmacia1.jpg" ,
   "sector":"farmacia",
@@ -13,7 +13,7 @@ const produtos = [
   {
 
   "id":2,
-  "description":"Paracetamol 750mg,20 comprimidos",
+  "description":"Paracetamol 750mg",
   "price":19.79,
   "image":"./img/imagem_farmacia2.jpg" ,
   "sector":"farmacia",
@@ -25,7 +25,7 @@ const produtos = [
   {
 
   "id":3,
-  "description":"Novanoite 320mg , 10 comprimidos",
+  "description":"Novanoite 320mg",
   "price":25.99,
   "image":"./img/imagem_farmacia3.jpg" ,
   "sector":"farmacia",
@@ -36,7 +36,7 @@ const produtos = [
   {
 
   "id":4,
-  "description":"Imecap hair max , 30 cápsulas",
+  "description":"Imecap hair max",
   "price":79.99,
   "image":"./img/imagem_farmacia4.jpg" ,
   "sector":"farmacia",
@@ -151,7 +151,7 @@ const produtos = [
   {
 
     "id":14,
-    "description":"Aspirador Xiaomi mi robot Vacuum",
+    "description":"Aspirador Xiaomi mi robot",
     "price":2.918,
     "image":"./img/imagem_variedades3.png" ,
     "sector":"variedades",
@@ -161,7 +161,6 @@ const produtos = [
   },
 
   {
-
     "id":15,
     "description":"Headphone Sony WH-1000XM4",
     "price":1.799,
@@ -208,9 +207,9 @@ const produtos = [
   {
 
     "id":19,
-    "description":"Bata palito",
-    "price":19.99,
-    "image":"./img/batata.PNG" ,
+    "description":"Abajur de mesa",
+    "price":69.99,
+    "image":"./img/abajur.webp" ,
     "sector":"variedades",
     "item":1,
     "texto":"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio ratione, deleniti quisquam numquam ipsam alias nobis enim a ipsum aliquid laboriosam, quae iure esse, possimus nulla beatae sint    natus asperiores."

@@ -1,17 +1,15 @@
 .home {
     width: 90%;
     height: 100%;
-    margin-left: 6%;
     box-sizing: border-box;
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background-color: #592B92;
 }
 
 .produtos {
     box-sizing: border-box;
-    background: #fff;
+    background: rgb(235, 236, 230);
     width: 100%;
     height: 100%;
     display: flex;
@@ -38,18 +36,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .productDescription{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
-.prodName, .prodName, .prodDesc{
+.prodPrice, .prodDesc{
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+}
+
+.prodDesc{
+    font-size: 0.8rem;
 }
 
 .buy{
@@ -80,5 +81,26 @@
 .prodImg{
     justify-content: center;
     width: 90%;
-    padding: 7%;
+    padding: 5%;
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(235, 236, 230);
+}
+
+.categorias button{
+    width: 15%;
+    padding: 1%;
+    border: 3px solid rgb(235, 236, 230);
+    background-color: #592B92;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(235, 236, 230);
+    font-weight: bold;
+}
+
+.iconCategory{
+    background-color: rgb(235, 236, 230);
 }
