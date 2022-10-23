@@ -3,7 +3,6 @@
 import React, {useEffect, useState} from 'react';
 import './styles.css';
 import { BiCartAlt, BiLogInCircle, BiLogOutCircle } from 'react-icons/bi';
-import { Navigate } from 'react-router-dom';
 import Login from '../auth/login';
 
 function Header({produto, setShowCart}) {
@@ -14,6 +13,7 @@ function Header({produto, setShowCart}) {
     useEffect(() => {
         localStorage.getItem('logado') === 'true' ? setLogado(true) : setLogado(false);
     }, [logado]);
+
 
     useEffect(() => {
     if(produto.length === 0){
@@ -31,12 +31,9 @@ function Header({produto, setShowCart}) {
         setShowLogin(true);
     }
 
-
-    
-
     return (
         <div className="header">
-            <h1>E-commerce Maggot</h1>
+            <img src='./img/grupo_seven 2.PNG'alt='logo' />
             <div>
                 {logado?
                 <button onClick={() => singOut()} className={`button-login`} >

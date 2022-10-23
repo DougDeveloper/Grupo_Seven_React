@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from "react";
+import CartItem from "./CartItem";
 import "./styles.css";
 import produtos from "../../database/allProdutos.js";
 
 function Cart({setShowCart, produtosCart}) {
     //selecionar produtos do pelo array de id
     const [produtosSelecionados, setProdutosSelecionados] = useState([]);
+    const [total, setTotal] = useState(0);
+
     useEffect(() => {
         if(produtosCart.length === 0){
             setProdutosSelecionados([]);
@@ -15,6 +18,20 @@ function Cart({setShowCart, produtosCart}) {
         
     }, [produtosCart]);
 
+    const handleRemove = (id) => {
+        setProdutosSelecionados(produtosSelecionados.filter(produto => produto.id !== id));
+    }
+
+    const handleTotal = (totalProduto) => {
+        setTotal(total + totalProduto);
+    }
+    // atualizar total assim que o componente for montado
+    useEffect(() => {
+        setTotal(produtosSelecionados.reduce((total, produto) => total + produto.price, 0));
+    }, [produtosSelecionados]);
+    
+
+
   return (
     <div className="cart">
         <div className="header-cart">
@@ -23,21 +40,19 @@ function Cart({setShowCart, produtosCart}) {
         </div>
         <div className="produtos-cart">
             {produtosSelecionados?.map((produto) => (
-                <div className="produto-cart" key={produto.id}>
-                    <div className="produto-info">
-                        <p>{produto.description}</p>
-                        <p>{produto.price}</p>
-                    </div>
-                    <div className="produto-eventos">
-                        <button>-</button>
-                        <p>{`total produtos: ${produto.price*10}`}</p>
-                        <button>+</button>
-                    </div>
-                </div>
+                <CartItem 
+                key={produto.id} 
+                produto={produto} 
+                handleRemove={handleRemove}
+                setTotal={setTotal}
+                setProdutosSelecionados={setProdutosSelecionados}
+                produtosCart={produtosCart}
+                total={total}
+                />
             ))}
         </div>
         <div className="final-cart">
-            <p>Total: R$ 0,00</p>
+            <p>Total: R$ {total? total : null }</p>
             <button>Finalizar compra</button>
         </div>
     </div>
