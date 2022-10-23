@@ -37,12 +37,12 @@ function Header({produto, setShowCart}) {
             <div>
                 {logado?
                 <button onClick={() => singOut()} className={`button-login`} >
-                    sair
+                    sair 
                     <BiLogInCircle />
                 </button>
                 : 
                 <button onClick={() =>singIn()} className={`button-login`} >
-                    entrar
+                    entrar 
                 <BiLogOutCircle />
                 </button>
                 }

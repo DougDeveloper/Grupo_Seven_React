@@ -27,7 +27,6 @@ function Home({ setProduto }) {
             <div className="produtos">
                 {produtosHome?.map((produto) => (
                     <div className="produto" key={produto.id}>
-                        <h2 className="prodName">{produto.nome}</h2>
                         <img className="prodImg" alt={produto.description} src={produto.image} />
                         <p className="prodPrice">{produto.price}</p>
                         <p className="prodDesc">{produto.description}</p>
