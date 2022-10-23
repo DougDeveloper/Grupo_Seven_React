@@ -1,44 +1,62 @@
 .header {
-    background-color: #282c34;
-    border-bottom: 1px solid #282;
+    background-color: rgb(232 249 248);
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    padding: 16px;
-    color: #fff;
-    background-color: rgb(232 249 248);
+    justify-content: space-evenly;
 }
-.header img {
-    height: 100px;
-    width: auto;
-    margin-right: 16px;
+
+.cart-login{
+    display: flex;
 }
-.header button {
+
+.alerta {
+    width: 30px;
+    height: 30px;
+    padding: auto;
+    margin: 10px;
+}
+
+.alerta{
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    padding: 15%;
     background-color: #592B92;
     border: 3px solid #592B92;
     border-radius: 5px;
     cursor: pointer;
     color: rgb(235, 236, 230);
-    font-weight: bold;
-    padding: 8px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    font-size: 155%;
+}
 
+a{
+    width: 10%;
 }
-.header button.alerta {
-    width: 40px;
-    height: 40px;
-    padding: auto;
-    margin: 10px;
+
+.imgLogo{
+    width: 110%;
 }
-.header button.alerta.alerta-sim {
-    background-color: #f00;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding: auto;
-    margin: 10px;
+
+.button-login{
+    width: 100%;
+    height: 100%;
+    margin-top: 6%;
+    padding: 15% 12% 13% 12%;
+    background-color: #592B92;
+    border: 3px solid #592B92;
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(235, 236, 230);
+    font-size: 90%;
+}
+
+.button-login:hover, .alerta:hover{
+    border: 3px solid #592B92;
+    background-color: rgb(235, 236, 230);
+    color: #592B92;
+}
+
+.alerta-sim {
+    box-shadow: 0 0 10px #f00;
 }

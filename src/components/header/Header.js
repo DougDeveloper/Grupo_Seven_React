@@ -1,5 +1,3 @@
-//Component header React js
-
 import React, {useEffect, useState} from 'react';
 import './styles.css';
 import { BiCartAlt, BiLogInCircle, BiLogOutCircle } from 'react-icons/bi';
@@ -33,8 +31,10 @@ function Header({produto, setShowCart}) {
 
     return (
         <div className="header">
-            <img src='./img/grupo_seven 2.PNG'alt='logo' />
-            <div>
+            <a href="./">
+            <img src="/img/grupo_seven 2.PNG" alt="imagem logo" className="imgLogo"></img>
+            </a>
+            <div className="cart-login">
                 {logado?
                 <button onClick={() => singOut()} className={`button-login`} >
                     sair 

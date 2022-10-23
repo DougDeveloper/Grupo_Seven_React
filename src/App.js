@@ -8,11 +8,12 @@ import Login from './components/auth/login';
 import Cadastro from './components/auth/cadastro';
 import Vitrine from './components/vitrine/Vitrine';
 
+
 function App() {
   const [selecionar, setSelecionar] = useState([]);
   const [showCart, setShowCart] = useState(false);
 
-  //funcao adiciona index do produto selecionado no array selecionar
+  // função adiciona index do produto selecionado no array selecionar
   const setProduto = (id) => {
     if(!selecionar.includes(id)){
     setSelecionar([...selecionar, id]);
